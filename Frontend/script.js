@@ -13,8 +13,8 @@ async function makeGuess() {
     else if (data.result === "correct") msgEl.textContent =
       `🎉 Correct! Number was ${data.number}. New game started!`;
 
-  } catch (err) {
-    console.error(err);
-    document.getElementById("message").textContent = "Error connecting to server!";
-  }
+    } catch (err) {
+        console.error(err);
+        document.getElementById("message").textContent = "Error connecting to server!";
+    }
 }
